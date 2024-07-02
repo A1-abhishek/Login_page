@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './style.css';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -18,10 +20,12 @@ function Login() {
     // Handle login logic here
     console.log('Email:', email);
     console.log('Password:', password);
+    // Redirect to Google route within the app
+    navigate('/google');
   };
 
   return (
-    <div className="login-container ">
+    <div className="login-container">
       <form onSubmit={handleSubmit}>
         <h2>Login</h2>
         <div className="form-group">
@@ -50,7 +54,7 @@ function Login() {
           <a href="#">Forgot password?</a>
         </div>
         <button type="submit">Log In</button>
-        <p>Don't have an account? <a href="http://localhost:3000/register">Register</a></p>
+        <p>Don't have an account? <a href="/register">Register</a></p>
       </form>
     </div>
   );

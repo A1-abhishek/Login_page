@@ -1,8 +1,8 @@
 import React from 'react';
-import Login from './login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './login';
 import Registration from './Registration';
-// import './style.css';
+import Google from './google'; // Import the Google component
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Registration />} />
+        <Route path="/google" element={<Google />} /> {/* Add the Google route */}
       </Routes>
     </BrowserRouter>
   );
