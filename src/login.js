@@ -21,7 +21,7 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-container ">
       <form onSubmit={handleSubmit}>
         <h2>Login</h2>
         <div className="form-group">
@@ -50,7 +50,7 @@ function Login() {
           <a href="#">Forgot password?</a>
         </div>
         <button type="submit">Log In</button>
-        <p>Don't have an account? <a href="#">Register</a></p>
+        <p>Don't have an account? <a href="http://localhost:3000/register">Register</a></p>
       </form>
     </div>
   );

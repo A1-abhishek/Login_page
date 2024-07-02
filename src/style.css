@@ -1,5 +1,7 @@
 /* App.css or style.css */
-.background {
+
+
+body {
   background-image: url('./background.jpg'); /* Ensure the correct path to your image */
   height: 100vh;
   background-size: cover;
