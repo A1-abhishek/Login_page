@@ -1,17 +1,15 @@
 import React from 'react';
 
-function Google() {
+function google() {
   return (
-    <div style={{ width: '100%', height: '100vh' }}>
+    <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100vh' }}>
       <iframe 
-        src="https://www.google.com" 
-        title="Google"
-        width="100%"
-        height="100%"
-        style={{ border: 'none' }}
+        src="https://www.flipkart.com" 
+        title="Flipkart"
+        style={{ width: '100%', height: '100%', border: 'none' }}
       ></iframe>
     </div>
   );
 }
 
-export default Google;
+export default google;
