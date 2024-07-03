@@ -51,7 +51,7 @@ function Login() {
         <div className="form-group">
           <input type="checkbox" id="rememberMe" />
           <label htmlFor="rememberMe">Remember me</label>
-          <a href="#">Forgot password?</a>
+          <a href="/forget">Forgot password?</a>
         </div>
         <button type="submit">Log In</button>
         <p>Don't have an account? <a href="/register">Register</a></p>
